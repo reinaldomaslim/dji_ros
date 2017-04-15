@@ -1,0 +1,31 @@
+cmake_minimum_required(VERSION 2.8.3)
+project(dji_infantry)
+
+## Add support for C++11, supported in ROS Kinetic and newer
+# add_definitions(-std=c++11)
+
+## Find catkin macros and libraries
+## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
+## is used, also find other catkin packages
+find_package(catkin REQUIRED COMPONENTS
+  roscpp
+  rospy
+  sensor_msgs
+  std_msgs
+)
+
+
+catkin_package(
+#  INCLUDE_DIRS include
+#  LIBRARIES dji_infantry
+#  CATKIN_DEPENDS roscpp sensor_msgs std_msgs
+#  DEPENDS system_lib
+)
+
+include_directories(
+  ${catkin_INCLUDE_DIRS}
+)
+
+add_executable(DJIProcessing src/DJIProcessing.cpp)
+target_link_libraries(DJIProcessing ${catkin_LIBRARIES})
+add_dependencies(DJIProcessing DJIProcessing_generate_messages_cpp)

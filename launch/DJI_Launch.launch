@@ -1,0 +1,10 @@
+<launch>
+	<node 
+	  name="DJIProcessing" pkg="dji_infantry" type="DJIProcessing" respawn="true">
+	</node>
+	<node
+	  name="serial_node" pkg="rosserial_python" type="serial_node.py"  args="/dev/ttyACM3" respawn="true">
+
+	</node>
+
+</launch>
