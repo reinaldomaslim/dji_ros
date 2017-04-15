@@ -6,6 +6,8 @@ ros::Publisher joy_cmd_pub;
 ros::Subscriber joy_cmd_sub;
 
 
+#define KEYBOARD_CONTROL
+
 #ifdef KEYBOARD_CONTROL
 
 ros::Subscriber keyboard_up_sub;

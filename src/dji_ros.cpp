@@ -123,8 +123,8 @@ int main(int argc, char **argv)
   joy_cmd_sub = n.subscribe("joy_msg", 1000, joy_callback);
 
 #ifdef KEYBOARD_CONTROL
-  keyboard_up_sub = n.subscribe("/keyboard/keyup", 1000, keyboard_up_callback);
-  keyboard_down_sub = n.subscribe("/keyboard/keydown", 1000, keyboard_down_callback);
+  keyboard_up_sub = n.subscribe("/keyboard_listen/keyup", 1000, keyboard_up_callback);
+  keyboard_down_sub = n.subscribe("/keyboard_listen/keydown", 1000, keyboard_down_callback);
 #endif
 
   
