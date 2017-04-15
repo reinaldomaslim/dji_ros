@@ -1,0 +1,10 @@
+<launch>
+	<node 
+	  name="dji_ros_withkeyboard" pkg="dji_infantry" type="dji_ros_withkeyboard" respawn="true">
+	</node>
+	<node
+	  name="serial_node" pkg="rosserial_python" type="serial_node.py"  args="/dev/ttyACM0" respawn="true">
+
+	</node>
+
+</launch>

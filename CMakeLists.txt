@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(dji_infantry)
+project(dji_ros)
 
 ## Add support for C++11, supported in ROS Kinetic and newer
 # add_definitions(-std=c++11)
@@ -26,6 +26,10 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-add_executable(DJIProcessing src/DJIProcessing.cpp)
-target_link_libraries(DJIProcessing ${catkin_LIBRARIES})
-add_dependencies(DJIProcessing DJIProcessing_generate_messages_cpp)
+add_executable(dji_ros src/dji_ros.cpp)
+target_link_libraries(dji_ros ${catkin_LIBRARIES})
+add_dependencies(dji_ros dji_ros_generate_messages_cpp)
+
+add_executable(dji_ros_withkeyboard src/dji_ros_withkeyboard.cpp)
+target_link_libraries(dji_ros_withkeyboard ${catkin_LIBRARIES})
+add_dependencies(dji_ros_withkeyboard dji_ros_withkeyboard_generate_messages_cpp)

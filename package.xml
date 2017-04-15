@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package>
-  <name>dji_infantry</name>
+  <name>dji_ros</name>
   <version>0.0.0</version>
   <description>The dji_infantry package</description>
 

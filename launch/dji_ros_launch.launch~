@@ -3,7 +3,7 @@
 	  name="DJIProcessing" pkg="dji_infantry" type="DJIProcessing" respawn="true">
 	</node>
 	<node
-	  name="serial_node" pkg="rosserial_python" type="serial_node.py"  args="/dev/ttyACM3" respawn="true">
+	  name="serial_node" pkg="rosserial_python" type="serial_node.py"  args="/dev/ttyACM0" respawn="true">
 
 	</node>
 
