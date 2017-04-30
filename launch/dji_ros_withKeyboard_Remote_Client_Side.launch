@@ -1,0 +1,7 @@
+<launch>
+
+	<node
+	  name="keyboard_listen" pkg="dji_ros" type="keyboard_listen"  respawn="true">
+
+	</node>
+</launch>
