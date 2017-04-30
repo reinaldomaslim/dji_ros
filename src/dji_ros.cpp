@@ -61,7 +61,12 @@ void joy_callback(const sensor_msgs::Joy::ConstPtr& joy_msg){
   ROS_INFO("%d",  joy_msg->buttons[1]);
   ROS_INFO("%d",  joy_msg->buttons[2]);
   ROS_INFO("%d",  joy_msg->buttons[3]);
-
+  ROS_INFO("%f",  joy_msg->axes[0]);
+  ROS_INFO("%f",  joy_msg->axes[1]);
+  ROS_INFO("%f",  joy_msg->axes[2]);
+  ROS_INFO("%f",  joy_msg->axes[3]);
+  ROS_INFO("%f",  joy_msg->axes[4]);
+  ROS_INFO("%f",  joy_msg->axes[5]);
 
 
 

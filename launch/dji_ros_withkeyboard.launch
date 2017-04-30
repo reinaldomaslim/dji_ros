@@ -4,7 +4,7 @@
 	  name="dji_ros_withkeyboard" pkg="dji_ros" type="dji_ros_withkeyboard" respawn="true">
 	</node>
 	<node
-	  name="serial_node" pkg="rosserial_python" type="serial_node.py"  args="/dev/ttyACM0" respawn="true">
+	  name="serial_node" pkg="rosserial_python" type="serial_node.py"  args="/dev/serial/by-id/usb-Arduino_Srl_Arduino_Mega_75533353038351011280-if00" respawn="true">
 
 	</node>
 	<node
